@@ -1,0 +1,3 @@
+User-agent: Yandex
+Clean-param: tracking
+Host: rebelthorp.com
