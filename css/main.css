@@ -84,7 +84,7 @@ a {
 
 .header__logo {
   display: block;
-  margin-bottom: 4%;
+  margin-bottom: 30px;
   background: url(../img/logo.svg) no-repeat center;
   width: 200px;
   height: 120px;
@@ -333,12 +333,12 @@ a {
 
 .footer__copyright {
   padding: 18px;
-  font-size: 9px;
+  font-size: 7px;
   text-transform: uppercase;
   color: #999999; }
   @media (min-width: 46.25em) and (max-width: 90.0525em) {
     .footer__copyright {
-      font-size: 11px; } }
+      font-size: 10px; } }
   @media (min-width: 90.0625em) {
     .footer__copyright {
       font-size: 12px; } }
