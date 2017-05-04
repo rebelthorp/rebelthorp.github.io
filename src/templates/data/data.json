@@ -1,5 +1,15 @@
 {
-  "name": "$package_name$",
-  "version": "0.0.1",
-  $END$
+  "skills": [
+    "concept art",
+    "2d art",
+    "3d modeling",
+    "texturing",
+    "environment",
+    "industrial design",
+    "animation",
+    "game assets",
+    "software",
+    "hardware"
+  ],
+  "about": "The team of CG artists, software developers, designers and animators located at cold Siberia. We are experimenting with game engines, VR technologies and biomechanics for game development purposes."
 }

@@ -1,4 +1,378 @@
+$mq-breakpoints: (
+  mobile: 320px,
+  tablet: 740px,
+  desktop: 980px,
+  wide: 1441px
+);
+
+$font-montserrat: 'Montserrat', 'Helvetica', sans-serif;
+
+$dark-color: rgb(22, 22, 22);
+
+//noinspection CssUnknownTarget
+@import "mq";
+
+@mixin font($font-size) {
+  font-family: $font-montserrat;
+  font-size: #{$font-size};
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
+  background: $dark-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+  @include mq($from: tablet, $until: desktop) {
+    width: 100%;
+  }
+
+  @include mq($from: desktop) {
+    width: 980px;
+  }
+}
+
+// HEADER
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh / 1.9);
+  min-height: 280px;
+
+  background: url(../img/header.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.header__logo {
+  $logo-width: 200px;
+  $logo-height: 120px;
+
+  display: block;
+  margin-bottom: 4%;
+  background: url(../img/logo.svg) no-repeat center;
+
+  width: $logo-width;
+  height: $logo-height;
+  background-size: $logo-width $logo-height;
+
+  @include mq($from: tablet, $until: wide) {
+    $logo-width: 200px;
+    $logo-height: 120px;
+
+    width: $logo-width;
+    height: $logo-height;
+    background-size: $logo-width $logo-height;
+  }
+
+  @include mq($from: wide) {
+    $logo-width: 260px;
+    $logo-height: 170px;
+
+    width: $logo-width;
+    height: $logo-height;
+    background-size: $logo-width $logo-height;
+  }
+}
+
+.header__caption {
+  @include font(10px);
+  line-height: 2;
+  color: darken(white, 20%);
+
+  @include mq($from: tablet, $until: wide) {
+    font-size: 13px;
+  }
+
+  @include mq($from: wide) {
+    font-size: 14px;
+  }
+}
+
+// SUBSCRIBE
+
+.subscribe {
+  @include font(10px);
+
+  background: $dark-color;
+  color: darken(white, 20%);
+  line-height: 1.8;
+  text-align: center;
+
+  background: $dark-color;
+  padding: 50px 15px;
+  margin-bottom: 50px;
+
+  @include mq($from: tablet, $until: wide) {
+    font-size: 12px;
+  }
+
+  @include mq($from: wide) {
+    font-size: 14px;
+  }
+}
+
+.subscribe__form {
+  display: block;
+  padding: 40px 0 0;
+}
+
+.subscribe__form-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe__field {
+  $placeholder-color: darken(white, 20%);
+
+  @include font(10px);
+  display: inline-block;
+  padding: 12px 22px;
+  border: 2px solid white;
+  border-right-width: 0;
+  background: $dark-color;
+  box-sizing: border-box;
+  color: white;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $placeholder-color;
+  }
+  &::-moz-placeholder {
+    color: $placeholder-color;
+  }
+  &:-moz-placeholder {
+    color: $placeholder-color;
+  }
+  &:-ms-input-placeholder {
+    color: $placeholder-color;
+  }
+
+  @include mq($from: tablet) {
+    width: 280px;
+    font-size: 11px;
+  }
+}
+
+.subscribe__button {
+  display: inline-block;
+  padding: 12px 22px;
+  border: 2px solid white;
+  @include font(10px);
+  background: $dark-color;
+  color: white;
+  transition: all .4s ease-in-out;
+  outline: none;
+
+  &:visited {
+    color: white;
+  }
+
+  &:hover {
+    background: white;
+    color: $dark-color;
+    cursor: pointer;
+  }
+
+  @include mq($from: tablet) {
+    font-size: 11px;
+  }
+}
+
+.subscribe__response {
+  padding-top: 30px;
+}
+
+// MAIN
+
+.main {
+  min-height: 300px;
+  background: white;
+  color: $dark-color;
+}
+
+.main__title {
+  @include font(18px);
+
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 2px;
+    bottom: -18px;
+    background: #cccccc;
+  }
+}
+
+.main__desc {
+  display: inline-block;
+
+  font-family: $font-montserrat;
+  font-weight: 400;
+  font-size: 17px;
+  color: #333333;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+.main__desc-item {
+  white-space: nowrap;
+}
+
+// HOME
+
+.home__container {
+  display: flex;
+  flex-direction: column;
+
+  @include mq($from: tablet) {
+    flex-direction: row;
+  }
+}
+
+.home__section {
+  flex: 1;
+  text-align: center;
+  padding: 0 15px;
+
+  @include mq($from: tablet) {
+    &:first-of-type {
+      padding: 0 0 0 25px;
+    }
+
+    &:last-of-type {
+      padding: 0 25px 0 0;
+    }
+  }
+}
+
+// FOOTER
+
+.footer {
+  @include font(10px);
+
+  background: $dark-color;
+  color: darken(white, 20%);
+  text-align: center;
+}
+
+.footer__contacts {
+  padding: 60px 15px;
+  text-align: center;
+}
+
+.footer__contact-title {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.footer__contact-link {
+  display: inline-block;
+  padding: 12px 22px;
+  border: 2px solid white;
+  font-size: 11px;
+  color: white;
+  transition: all .4s ease-in-out;
+
+  &:visited {
+    color: white;
+  }
+
+  &:hover {
+    background: white;
+    color: $dark-color;
+  }
+}
+
+.footer__socials {
+  padding: 36px 50px;
+  background: url(../img/footer.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.footer__socials-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  transform: scale(1);
+  transition: transform .4s ease-in-out;
+
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+
+.footer__social-link-insta {
+  background: url(../img/socials/instagram.svg) no-repeat center;
+  background-size: 30px 30px;
+}
+
+.footer__social-link-twitter {
+  background: url(../img/socials/twitter.svg) no-repeat center;
+  background-size: 30px 30px;
+}
+
+.footer__social-link-behance {
+  background: url(../img/socials/behance.svg) no-repeat center;
+  background-size: 30px 30px;
+}
+
+.footer__social-link-artstation {
+  background: url(../img/socials/artstation.svg) no-repeat center;
+  background-size: 30px 30px;
+}
+
+.footer__copyright {
+  padding: 18px;
+
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #999999;
+
+  @include mq($from: tablet, $until: wide) {
+    font-size: 11px;
+  }
+
+  @include mq($from: wide) {
+    font-size: 12px;
+  }
 }
