@@ -24,7 +24,7 @@ gulp.task('html', function () {
     removeComments: true
   }))
   .pipe(browserSync.reload({ stream: true }))
-  .pipe(gulp.dest('./web'));
+  .pipe(gulp.dest('./'));
 });
 
 gulp.task('scss', function () {
@@ -38,19 +38,19 @@ gulp.task('scss', function () {
   ]
   }).on('error', sass.logError))
   .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-  .pipe(gulp.dest('./web/css'))
+  .pipe(gulp.dest('./css'))
   .pipe(sourcemaps.init())
   .pipe(rename({ suffix: '.min' }))
   .pipe(csso())
   .pipe(sourcemaps.write('./'))
   .pipe(browserSync.reload({ stream: true }))
-  .pipe(gulp.dest('./web/css'));
+  .pipe(gulp.dest('./css'));
 });
 
 gulp.task('browserSync', function () {
   browserSync({
     server: {
-      baseDir: './web'
+      baseDir: './'
     },
     port: 8080,
     open: true,
