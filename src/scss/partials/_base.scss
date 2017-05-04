@@ -1,7 +1,7 @@
 $mq-breakpoints: (
-  mobile: 320px,
-  tablet: 740px,
-  desktop: 980px,
+  mobile: 321px,
+  tablet: 741px,
+  desktop: 981px,
   wide: 1441px
 );
 
@@ -56,8 +56,10 @@ a {
   justify-content: center;
 
   position: relative;
+  padding: 0 25px;
   overflow: hidden;
   height: calc(100vh / 1.9);
+  text-align: center;
   min-height: 280px;
 
   background: url(../img/header.jpg) no-repeat center;
@@ -65,8 +67,8 @@ a {
 }
 
 .header__logo {
-  $logo-width: 200px;
-  $logo-height: 120px;
+  $logo-width: 180px;
+  $logo-height: 100px;
 
   display: block;
   margin-bottom: 30px;
@@ -120,7 +122,7 @@ a {
   text-align: center;
 
   background: $dark-color;
-  padding: 50px 15px;
+  padding: 50px 20px;
   margin-bottom: 50px;
 
   @include mq($from: tablet, $until: wide) {
@@ -139,19 +141,25 @@ a {
 
 .subscribe__form-inner {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+
+  @include mq($from: mobile) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .subscribe__field {
   $placeholder-color: darken(white, 20%);
 
   @include font(10px);
-  display: inline-block;
+  display: block;
+  width: 100%;
   padding: 12px 22px;
+  margin-bottom: 20px;
   border: 2px solid white;
-  border-right-width: 0;
+  border-radius:0;
   background: $dark-color;
   box-sizing: border-box;
   color: white;
@@ -173,7 +181,9 @@ a {
     color: $placeholder-color;
   }
 
-  @include mq($from: tablet) {
+  @include mq($from: mobile) {
+    border-right-width: 0;
+    margin-bottom: 0;
     width: 280px;
     font-size: 11px;
   }
@@ -185,9 +195,13 @@ a {
   border: 2px solid white;
   @include font(10px);
   background: $dark-color;
+  box-sizing: border-box;
   color: white;
   transition: all .4s ease-in-out;
   outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius:0;
 
   &:visited {
     color: white;
@@ -318,9 +332,13 @@ a {
 }
 
 .footer__socials {
-  padding: 36px 50px;
+  padding: 36px 25px;
   background: url(../img/footer.jpg) no-repeat center;
   background-size: cover;
+
+  @include mq($from: tablet) {
+    padding: 36px 50px;
+  }
 }
 
 .footer__socials-inner {
