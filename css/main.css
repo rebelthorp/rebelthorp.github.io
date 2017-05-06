@@ -56,6 +56,19 @@ body {
 a {
   text-decoration: none; }
 
+.link {
+  display: inline-block;
+  padding: 12px 22px;
+  border: 2px solid white;
+  font-size: 11px;
+  color: white;
+  transition: all .4s ease-in-out; }
+  .link:visited {
+    color: white; }
+  .link:hover {
+    background: white;
+    color: #161616; }
+
 .container {
   width: 100%;
   margin: 0 auto; }
@@ -116,6 +129,18 @@ a {
   @media (min-width: 90.0625em) {
     .header__caption {
       font-size: 14px; } }
+
+.header__service {
+  display: inline-block;
+  margin-bottom: 30px;
+  font-family: "Averia Sans Libre", cursive;
+  font-size: 190px;
+  color: white; }
+
+.header__service-caption {
+  font-family: "Averia Sans Libre", cursive;
+  font-size: 40px;
+  color: white; }
 
 .subscribe {
   font-family: "Montserrat", "Helvetica", sans-serif;
@@ -218,7 +243,6 @@ a {
   padding-top: 30px; }
 
 .main {
-  min-height: 300px;
   background: white;
   color: #161616; }
 
@@ -254,13 +278,13 @@ a {
 .main__desc-item {
   white-space: nowrap; }
 
-.home__container {
+.home {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
   @media (min-width: 46.3125em) {
-    .home__container {
+    .home {
       -ms-flex-direction: row;
           flex-direction: row; } }
 
@@ -275,6 +299,43 @@ a {
     .home__section:last-of-type {
       padding: 0 25px 0 0; } }
 
+.not-found {
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background: #161616;
+  color: #cccccc;
+  padding: 60px 15px;
+  text-align: center; }
+
+.not-found__title {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 30px; }
+
+.not-found__description {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 30px; }
+
+.contact {
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background: #161616;
+  color: #cccccc;
+  padding: 60px 15px;
+  text-align: center; }
+
+.contact__title {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 30px; }
+
 .footer {
   font-family: "Montserrat", "Helvetica", sans-serif;
   font-size: 10px;
@@ -284,28 +345,6 @@ a {
   background: #161616;
   color: #cccccc;
   text-align: center; }
-
-.footer__contacts {
-  padding: 60px 15px;
-  text-align: center; }
-
-.footer__contact-title {
-  font-size: 12px;
-  line-height: 1.8;
-  margin-bottom: 30px; }
-
-.footer__contact-link {
-  display: inline-block;
-  padding: 12px 22px;
-  border: 2px solid white;
-  font-size: 11px;
-  color: white;
-  transition: all .4s ease-in-out; }
-  .footer__contact-link:visited {
-    color: white; }
-  .footer__contact-link:hover {
-    background: white;
-    color: #161616; }
 
 .footer__socials {
   padding: 36px 25px;

@@ -6,6 +6,7 @@ $mq-breakpoints: (
 );
 
 $font-montserrat: 'Montserrat', 'Helvetica', sans-serif;
+$font-averia: 'Averia Sans Libre', cursive;
 
 $dark-color: rgb(22, 22, 22);
 
@@ -32,6 +33,24 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.link {
+  display: inline-block;
+  padding: 12px 22px;
+  border: 2px solid white;
+  font-size: 11px;
+  color: white;
+  transition: all .4s ease-in-out;
+
+  &:visited {
+    color: white;
+  }
+
+  &:hover {
+    background: white;
+    color: $dark-color;
+  }
 }
 
 .container {
@@ -109,6 +128,21 @@ a {
   @include mq($from: wide) {
     font-size: 14px;
   }
+}
+
+.header__service {
+  display: inline-block;
+  margin-bottom: 30px;
+
+  font-family: $font-averia;
+  font-size: 190px;
+  color: white;
+}
+
+.header__service-caption {
+  font-family: $font-averia;
+  font-size: 40px;
+  color: white;
 }
 
 // SUBSCRIBE
@@ -225,7 +259,6 @@ a {
 // MAIN
 
 .main {
-  min-height: 300px;
   background: white;
   color: $dark-color;
 }
@@ -267,7 +300,7 @@ a {
 
 // HOME
 
-.home__container {
+.home {
   display: flex;
   flex-direction: column;
 
@@ -292,6 +325,46 @@ a {
   }
 }
 
+// 404
+
+.not-found {
+  @include font(10px);
+
+  background: $dark-color;
+  color: darken(white, 20%);
+  padding: 60px 15px;
+  text-align: center;
+}
+
+.not-found__title {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.not-found__description {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+// CONTACTS
+
+.contact {
+  @include font(10px);
+
+  background: $dark-color;
+  color: darken(white, 20%);
+  padding: 60px 15px;
+  text-align: center;
+}
+
+.contact__title {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
 // FOOTER
 
 .footer {
@@ -300,35 +373,6 @@ a {
   background: $dark-color;
   color: darken(white, 20%);
   text-align: center;
-}
-
-.footer__contacts {
-  padding: 60px 15px;
-  text-align: center;
-}
-
-.footer__contact-title {
-  font-size: 12px;
-  line-height: 1.8;
-  margin-bottom: 30px;
-}
-
-.footer__contact-link {
-  display: inline-block;
-  padding: 12px 22px;
-  border: 2px solid white;
-  font-size: 11px;
-  color: white;
-  transition: all .4s ease-in-out;
-
-  &:visited {
-    color: white;
-  }
-
-  &:hover {
-    background: white;
-    color: $dark-color;
-  }
 }
 
 .footer__socials {

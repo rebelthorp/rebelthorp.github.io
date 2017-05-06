@@ -7,10 +7,15 @@
   <title>{{@root.meta.title}} / {{@root.meta.author}}</title>
 </head>
 <body>
-{{> header}}
+<header class="header">
+  <a class="header__logo" href="/"></a>
+  <p class="header__caption">
+    website is under construction...
+  </p>
+</header>
 <main class="main" role="main">
   {{> subscribe}}
-  <section class="home__container container">
+  <section class="home container">
     <div class="home__section">
       <h2 class="main__title">
         What we do
@@ -35,6 +40,7 @@
       </p>
     </div>
   </section>
+  {{> contact}}
 </main>
 {{> footer}}
 {{> analytics}}

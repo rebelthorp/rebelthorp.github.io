@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+  {{> head}}
+
+  <title>Page Not Found! / {{@root.meta.author}}</title>
+</head>
+<body>
+<header class="header">
+  <span class="header__service">
+    404
+  </span>
+  <span class="header__service-caption">
+    Ooops!
+  </span>
+</header>
+<main class="main" role="main">
+  <section class="not-found">
+    <div class="container">
+      <h3 class="not-found__title">
+        Page not found.
+      </h3>
+      <p class="not-found__description">
+        Unfortunately, this page does not exist.<br />
+        Please check your URL or return to the home page.
+      </p>
+      <a
+        class="link"
+        href="/"
+      >
+        Go to home page
+      </a>
+    </div>
+  </section>
+</main>
+{{> footer}}
+{{> analytics}}
+</body>
+</html>
