@@ -6,6 +6,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const csso = require('gulp-csso');
 const rename = require('gulp-rename');
+const versionNumber = require('gulp-version-number');
 const browserSync = require('browser-sync');
 
 gulp.task('html', function () {
@@ -23,6 +24,13 @@ gulp.task('html', function () {
     collapseWhitespace: true,
     removeComments: true
   }))
+  .pipe(versionNumber({
+    value: '%MDS%',
+    append: {
+      key: 'v',
+      to: ['css']
+    }
+  }))
   .pipe(browserSync.reload({ stream: true }))
   .pipe(gulp.dest('./'));
 });
@@ -35,7 +43,7 @@ gulp.task('scss', function () {
     includePaths: [
       require('node-reset-scss').includePath,
       'node_modules/sass-mq'
-  ]
+    ]
   }).on('error', sass.logError))
   .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
   .pipe(gulp.dest('./css'))
