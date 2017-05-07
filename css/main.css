@@ -364,8 +364,8 @@ a {
 
 .footer__social-link {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   transform: scale(1);
   transition: transform .4s ease-in-out; }
   .footer__social-link:hover {
@@ -373,19 +373,19 @@ a {
 
 .footer__social-link-insta {
   background: url(../img/socials/instagram.svg) no-repeat center;
-  background-size: 30px 30px; }
+  background-size: contain; }
 
 .footer__social-link-twitter {
   background: url(../img/socials/twitter.svg) no-repeat center;
-  background-size: 30px 30px; }
+  background-size: contain; }
 
 .footer__social-link-behance {
   background: url(../img/socials/behance.svg) no-repeat center;
-  background-size: 30px 30px; }
+  background-size: contain; }
 
 .footer__social-link-artstation {
   background: url(../img/socials/artstation.svg) no-repeat center;
-  background-size: 30px 30px; }
+  background-size: contain; }
 
 .footer__copyright {
   padding: 18px;
