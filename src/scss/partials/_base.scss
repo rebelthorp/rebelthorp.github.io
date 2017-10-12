@@ -62,7 +62,7 @@ a {
   }
 
   @include mq($from: desktop) {
-    width: 980px;
+    width: 920px;
   }
 }
 
@@ -177,7 +177,7 @@ a {
   display: flex;
   flex-direction: column;
 
-  @include mq($from: mobile) {
+  @include mq($from: tablet) {
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -215,7 +215,7 @@ a {
     color: $placeholder-color;
   }
 
-  @include mq($from: mobile) {
+  @include mq($from: tablet) {
     border-right-width: 0;
     margin-bottom: 0;
     width: 280px;
@@ -379,9 +379,11 @@ a {
   padding: 36px 25px;
   background: url(../img/footer.jpg) no-repeat center;
   background-size: cover;
+  box-sizing: border-box;
+
 
   @include mq($from: tablet) {
-    padding: 36px 50px;
+    padding: 36px;
   }
 }
 
@@ -405,6 +407,11 @@ a {
 
 .footer__social-link-insta {
   background: url(../img/socials/instagram.svg) no-repeat center;
+  background-size: contain;
+}
+
+.footer__social-link-youtube {
+  background: url(../img/socials/youtube.svg) no-repeat center;
   background-size: contain;
 }
 
