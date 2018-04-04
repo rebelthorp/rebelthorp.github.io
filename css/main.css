@@ -404,6 +404,10 @@ a {
     -webkit-transform: scale(1.3);
             transform: scale(1.3); }
 
+.footer__social-link-ue4 {
+  background: url(../img/socials/ue4.svg) no-repeat center;
+  background-size: contain; }
+
 .footer__social-link-insta {
   background: url(../img/socials/instagram.svg) no-repeat center;
   background-size: contain; }
