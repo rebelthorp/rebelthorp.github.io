@@ -11,5 +11,12 @@
     "software",
     "hardware"
   ],
-  "about": "The team of CG artists, software developers, designers and animators located at cold Siberia. We are experimenting with game engines, VR technologies and biomechanics for game development purposes."
+  "about": "The team of CG artists, software developers, designers and animators located at cold Siberia. We are experimenting with game engines, VR technologies and biomechanics for game development purposes.",
+  "assets": [
+    {
+      "video": "https://www.youtube.com/embed/UXPVeLCmBVw",
+      "link": "https://www.unrealengine.com/marketplace/russian-assault-rifle",
+      "description": "AAA quality russian assault rifle (AK105) with 4K PBR textures, 3 LODs, VFX, SFX, FPS animated arms and environment props."
+    }
+  ]
 }

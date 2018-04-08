@@ -1,0 +1,34 @@
+<section class="assets">
+  <div class="container assets__title-wrapper">
+    <h2 class="assets__title">
+      Game Assets
+    </h2>
+  </div>
+  <div class="container">
+    {{#each @root.data.assets}}
+      <article class="assets__item">
+        <div class="video-wrapper">
+          <iframe
+            width="560"
+            height="315"
+            src="{{this.video}}"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <div class="assets__item-desc">
+          <p>{{this.description}}</p>
+          <a
+            class="link"
+            href="{{this.link}}"
+            rel="external"
+          >
+            View More
+          </a>
+        </div>
+      </article>
+    {{/each}}
+  </div>
+</section>
