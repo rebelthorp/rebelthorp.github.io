@@ -384,7 +384,7 @@ a {
     background: #cccccc; }
 
 .assets__item {
-  margin-bottom: 40px; }
+  margin-bottom: 30px; }
 
 .assets__item-desc {
   color: #cccccc;
@@ -398,6 +398,8 @@ a {
     text-transform: uppercase;
     line-height: 2;
     margin-bottom: 30px; }
+  .assets__item-desc .link {
+    margin: 0 10px 20px; }
 
 .video-wrapper {
   float: none;

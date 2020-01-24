@@ -14,9 +14,42 @@
   "about": "The team of CG artists, software developers, designers and animators located at cold Siberia. We are experimenting with game engines, VR technologies and biomechanics for game development purposes.",
   "assets": [
     {
+      "video": "https://www.youtube.com/embed/zPCpi1G5-CA",
+      "description": "AAA quality weapon mods for Picatinny / Weaver rail with 4K PBR textures, 3 LODs.",
+      "urls": {
+        "artstation": "http://bit.ly/2HCW318",
+        "cgtrader": "http://bit.ly/2Wrr2p9",
+        "gumroad": "http://bit.ly/2YV5aAp"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/FL52NI0J_zU",
+      "description": "AAA quality american assault rifle (AR15) with 4K PBR textures, 3 LODs, VFX, SFX, FPS animated arms and environment props.",
+      "urls": {
+        "ue": "http://bit.ly/2Qz2OnG",
+        "artstation": "http://bit.ly/2JEXMp1",
+        "cgtrader": "http://bit.ly/2wrxqhz",
+        "gumroad": "http://bit.ly/2VNo1LL"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/jl1BnYNqhlA",
+      "description": "AAA quality german assault rifle (MR762) with 4K PBR textures, 3 LODs, VFX, SFX, FPS animated arms and environment props.",
+      "urls": {
+        "artstation": "http://bit.ly/2WnRwbj",
+        "cgtrader": "http://bit.ly/2VUNG55",
+        "gumroad": "http://bit.ly/2LYo0Rv"
+      }
+    },
+    {
       "video": "https://www.youtube.com/embed/UXPVeLCmBVw",
-      "link": "https://www.unrealengine.com/marketplace/russian-assault-rifle",
-      "description": "AAA quality russian assault rifle (AK105) with 4K PBR textures, 3 LODs, VFX, SFX, FPS animated arms and environment props."
+      "description": "AAA quality russian assault rifle (AK105) with 4K PBR textures, 3 LODs, VFX, SFX, FPS animated arms and environment props.",
+      "urls": {
+        "ue": "http://bit.ly/2xKlOKi",
+        "artstation": "http://bit.ly/2QqsTVY",
+        "cgtrader": "http://bit.ly/2X5vS8N",
+        "gumroad": "http://bit.ly/2sHN8mD"
+      }
     }
   ]
 }

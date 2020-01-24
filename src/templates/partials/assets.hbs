@@ -20,13 +20,44 @@
         </div>
         <div class="assets__item-desc">
           <p>{{this.description}}</p>
-          <a
-            class="link"
-            href="{{this.link}}"
-            rel="external"
-          >
-            View More
-          </a>
+          {{#if this.urls}}
+            {{#if this.urls.ue}}
+              <a
+                class="link"
+                href="{{this.urls.ue}}"
+                rel="external"
+              >
+                UE Marketplace
+              </a>
+            {{/if}}
+            {{#if this.urls.cgtrader}}
+              <a
+                class="link"
+                href="{{this.urls.cgtrader}}"
+                rel="external"
+              >
+                CG Trader
+              </a>
+            {{/if}}
+            {{#if this.urls.artstation}}
+              <a
+                class="link"
+                href="{{this.urls.artstation}}"
+                rel="external"
+              >
+                ArtStation
+              </a>
+            {{/if}}
+            {{#if this.urls.gumroad}}
+              <a
+                class="link"
+                href="{{this.urls.gumroad}}"
+                rel="external"
+              >
+                Gumroad
+              </a>
+            {{/if}}
+          {{/if}}
         </div>
       </article>
     {{/each}}

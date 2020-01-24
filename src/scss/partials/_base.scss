@@ -386,7 +386,7 @@ a {
 }
 
 .assets__item {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .assets__item-desc {
@@ -398,6 +398,10 @@ a {
     @include font(12px);
     line-height: 2;
     margin-bottom: 30px;
+  }
+
+  .link {
+    margin: 0 10px 20px;
   }
 }
 
