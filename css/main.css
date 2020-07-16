@@ -494,9 +494,10 @@ a {
   background: url(../img/socials/twitter.svg) no-repeat center;
   background-size: contain; }
 
-.footer__social-link-behance {
-  background: url(../img/socials/behance.svg) no-repeat center;
-  background-size: contain; }
+.footer__social-link-cgtrader {
+  background: url(../img/socials/cgtrader.svg) no-repeat center;
+  background-size: contain;
+  width: 60px; }
 
 .footer__social-link-artstation {
   background: url(../img/socials/artstation.svg) no-repeat center;

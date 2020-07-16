@@ -14,6 +14,15 @@
   "about": "The team of CG artists, software developers, designers and animators located at cold Siberia. We are experimenting with game engines, VR technologies and biomechanics for game development purposes.",
   "assets": [
     {
+      "video": "https://www.youtube.com/embed/6yDMcMNbzi8",
+      "description": "AAA quality pump action shotgun (Mossberg 590A1) with 4K PBR textures, 3 LODs, VFX, SFX, FPS animated arms and environment props.",
+      "urls": {
+        "ue": "https://bit.ly/30dDOri",
+        "artstation": "https://bit.ly/3j8CWgm",
+        "cgtrader": "https://bit.ly/2ZyG9Os"
+      }
+    },
+    {
       "video": "https://www.youtube.com/embed/zPCpi1G5-CA",
       "description": "AAA quality weapon mods for Picatinny / Weaver rail with 4K PBR textures, 3 LODs.",
       "urls": {
