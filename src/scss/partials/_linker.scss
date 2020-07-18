@@ -1,0 +1,47 @@
+@import "_glob.scss";
+
+.linker__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 20px;
+}
+
+.linker__logo {
+  $logo-width: 120px;
+  $logo-height: 70px;
+
+  display: block;
+  margin-bottom: 30px;
+  background: url(../img/logo.svg) no-repeat center;
+
+  width: $logo-width;
+  height: $logo-height;
+  background-size: $logo-width $logo-height;
+}
+
+.linker__main {
+  padding: 0 20px 20px;
+}
+
+.linker__button {
+  @include font(10px);
+  display: inline-block;
+  padding: 16px 22px;
+  border: 2px solid white;
+  font-size: 11px;
+  color: white;
+  transition: all .4s ease-in-out;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+
+  &:visited {
+    color: white;
+  }
+
+  &:hover {
+    background: white;
+    color: $dark-color;
+  }
+}

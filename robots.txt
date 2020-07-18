@@ -1,3 +1,4 @@
 User-agent: Yandex
 Clean-param: tracking
+Disallow: /linker
 Host: rebelthorp.com

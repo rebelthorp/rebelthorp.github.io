@@ -1,0 +1,12 @@
+$font-montserrat: 'Montserrat', 'Helvetica', sans-serif;
+$font-averia: 'Averia Sans Libre', cursive;
+
+$dark-color: rgb(22, 22, 22);
+
+@mixin font($font-size) {
+  font-family: $font-montserrat;
+  font-size: #{$font-size};
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
