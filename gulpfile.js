@@ -12,11 +12,13 @@ const browserSync = require('browser-sync').create();
 gulp.task('html', function() {
   return gulp
     .src('./src/*.hbs')
-    .pipe(hbs({
-      partials: './src/templates/partials/**/*.hbs',
-      helpers: './src/templates/helpers/*.js',
-      data: './src/templates/data/**/*.{js,json}',
-    }))
+    .pipe(hbs()
+      .partials('./src/templates/partials/**/*.hbs')
+      .helpers({
+        year: function () { return (new Date().getFullYear())}
+      })
+      .data('./src/templates/data/**/*.{js,json}')
+    )
     .pipe(rename({
       extname: '.html',
     }))
