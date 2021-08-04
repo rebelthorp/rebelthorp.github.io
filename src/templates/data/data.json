@@ -14,7 +14,16 @@
   "about": "The team of CG artists, software developers, designers and animators located at cold Siberia. We are experimenting with game engines, VR technologies and biomechanics for game development purposes.",
   "assets": [
     {
-      "video": "https://www.youtube.com/embed/6yDMcMNbzi8",
+      "video": "https://www.youtube.com/embed/ZM9CsQHhUKg",
+      "description": "AAA quality sniper rifle (XM2010) with 4K PBR textures, 3 LODs, VFX, SFX, FPS animated arms and environment props.",
+      "urls": {
+        "ue": "https://bit.ly/3bqv6MT",
+        "artstation": "https://bit.ly/3eVzRQO",
+        "cgtrader": "https://bit.ly/33WkO2V"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/xXVxKTha0p4",
       "description": "AAA quality pump action shotgun (Mossberg 590A1) with 4K PBR textures, 3 LODs, VFX, SFX, FPS animated arms and environment props.",
       "urls": {
         "ue": "https://bit.ly/30dDOri",
@@ -23,7 +32,7 @@
       }
     },
     {
-      "video": "https://www.youtube.com/embed/zPCpi1G5-CA",
+      "video": "https://www.youtube.com/embed/tCPd0Bmv-3k",
       "description": "AAA quality weapon mods for Picatinny / Weaver rail with 4K PBR textures, 3 LODs.",
       "urls": {
         "artstation": "http://bit.ly/2HCW318",
@@ -31,7 +40,7 @@
       }
     },
     {
-      "video": "https://www.youtube.com/embed/FL52NI0J_zU",
+      "video": "https://www.youtube.com/embed/RdsIUX8sK-E",
       "description": "AAA quality american assault rifle (AR15) with 4K PBR textures, 3 LODs, VFX, SFX, FPS animated arms and environment props.",
       "urls": {
         "ue": "http://bit.ly/2Qz2OnG",
@@ -40,7 +49,7 @@
       }
     },
     {
-      "video": "https://www.youtube.com/embed/jl1BnYNqhlA",
+      "video": "https://www.youtube.com/embed/fj8Gq6dY6pc",
       "description": "AAA quality german assault rifle (MR762) with 4K PBR textures, 3 LODs, VFX, SFX, FPS animated arms and environment props.",
       "urls": {
         "artstation": "http://bit.ly/2WnRwbj",
@@ -48,7 +57,7 @@
       }
     },
     {
-      "video": "https://www.youtube.com/embed/UXPVeLCmBVw",
+      "video": "https://www.youtube.com/embed/Km7VUmsRo1M",
       "description": "AAA quality russian assault rifle (AK105) with 4K PBR textures, 3 LODs, VFX, SFX, FPS animated arms and environment props.",
       "urls": {
         "ue": "http://bit.ly/2xKlOKi",
