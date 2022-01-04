@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const hbs = require('gulp-hb');
 const htmlmin = require('gulp-htmlmin');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('node-sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const csso = require('gulp-csso');
@@ -15,7 +15,10 @@ gulp.task('html', function() {
     .pipe(hbs()
       .partials('./src/templates/partials/**/*.hbs')
       .helpers({
-        year: function () { return (new Date().getFullYear())}
+        year: () => {
+          const date = new Date();
+          return date.getFullYear();
+        }
       })
       .data('./src/templates/data/**/*.{js,json}')
     )
